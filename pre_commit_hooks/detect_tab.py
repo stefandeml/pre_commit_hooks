@@ -15,12 +15,12 @@ def main(argv=None):  # type: (Optional[Sequence[str]]) -> int
     tab_files = []
 
     for filename in args.filenames:
-        with open(filename, 'rb') as f:
+        with open(filename, 'r') as f:
             content = f.read()
-            if any(b'\t' in content):
+            if any('\t' in content):
                 tab_files.append(filename)
 
-    if tab_files: 
+    if tab_files:
         for tab_file in tab_files:
             print('Tab found: {}'.format(tab_file))
         return 0 # will only warn and not fail
