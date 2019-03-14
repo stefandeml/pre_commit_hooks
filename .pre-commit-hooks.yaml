@@ -1,0 +1,6 @@
+-   id: detect_tab 
+    name: detect tab indentation
+    description: detect tab indentation
+    entry: detect_tab
+    language: python
+    types: [python]
