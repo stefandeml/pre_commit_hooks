@@ -17,7 +17,7 @@ def main(argv=None):  # type: (Optional[Sequence[str]]) -> int
     for filename in args.filenames:
         with open(filename, 'r') as f:
             content = f.read()
-            if any('\t' in content):
+            if '\t' in content:
                 tab_files.append(filename)
 
     if tab_files:
