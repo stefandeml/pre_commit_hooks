@@ -23,7 +23,7 @@ def main(argv=None):  # type: (Optional[Sequence[str]]) -> int
     if tab_files:
         for tab_file in tab_files:
             print('Tab found: {}'.format(tab_file))
-        return 0 # will only warn and not fail
+        return 1
     else:
         return 0
 
