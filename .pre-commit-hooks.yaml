@@ -1,6 +1,13 @@
--   id: detect_tab 
+-   id: detect_tab
     name: detect tab indentation
     description: detect tab indentation
     entry: detect_tab
     language: python
     types: [python]
+-   id: fmt
+    name: fmt
+    description: Format files with rustfmt.
+    entry: rustfmt --
+    language: system
+    files: \.rs$
+    args: []
