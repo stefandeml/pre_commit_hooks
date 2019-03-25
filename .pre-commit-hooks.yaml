@@ -11,3 +11,12 @@
     language: system
     files: \.rs$
     args: []
+-   id: unittest
+    name: run unittest
+    description: run unittest
+    entry: python -m unittest discover -s tests/ -p '*.py'
+    pass_filenames: false 
+    language: system
+    types: [python]
+    args: []
+
